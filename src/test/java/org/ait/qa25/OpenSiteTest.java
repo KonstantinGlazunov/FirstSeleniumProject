@@ -27,7 +27,7 @@ driver = new ChromeDriver();
     //after - tearDown - браузер закрывается
 
     @AfterMethod
-    public void closeGoogleTest() {
+    public void tearDown() {
         driver.close(); // закрывает текущую вкладку
         driver.quit();  //закрывает все вкладки
     }
